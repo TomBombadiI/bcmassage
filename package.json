@@ -55,8 +55,10 @@
   },
   "dependencies": {
     "@a1rth/css-normalize": "1.2.1",
+    "@fancyapps/ui": "^6.0.16",
     "clsx": "2.1.1",
-    "imask": "7.6.1"
+    "imask": "7.6.1",
+    "swiper": "^11.2.10"
   },
   "overrides": {
     "typescript-eslint": {
