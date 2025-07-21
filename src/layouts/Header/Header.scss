@@ -42,6 +42,7 @@
     border: none;
     padding: var(--container-padding-x);
     transition-duration: var(--transition-duration);
+    z-index: var(--z-index-popup);
     transition-behavior: allow-discrete;
 
     @include mobile-above {
@@ -88,6 +89,7 @@
     }
 
     &-link {
+      font-size: 18px;
       padding: var(--spacing-sm) var(--spacing-sm);
 
       @include hover {
@@ -110,6 +112,6 @@
 
   &__burger-button {
     position: relative;
-    z-index: 1;
+    z-index: calc(var(--z-index-popup) + 1);
   }
 }

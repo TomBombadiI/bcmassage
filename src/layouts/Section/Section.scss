@@ -1,7 +1,11 @@
 .section {
   display: grid;
-  row-gap: fluid(80, 40);
+  row-gap: 1rem;
   padding-block: 50px;
+
+  &__title {
+    color: var(--color-primary);
+  }
 
   &__header {
     display: flex;
@@ -14,5 +18,9 @@
       align-items: start;
       row-gap: 20px;
     }
+  }
+
+  &__body {
+    @include fluid-text(18, 16);
   }
 }

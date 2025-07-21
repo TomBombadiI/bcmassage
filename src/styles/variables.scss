@@ -10,6 +10,7 @@
   --color-accent: #e50000;
   --color-accent-orange: #ff7400;
   --color-accent-peach: #ffa254;
+  --color-accent-violet: #9f5894;
   --color-light-gray: #cecece;
   --color-border: #dadada;
   --color-form-text: #848484;
@@ -32,9 +33,12 @@
   --transition-duration: 0.2s;
 
   /* Spacings */
-  --spacing-xs: .25rem;
-  --spacing-sm: .5rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
+
+  // layers
+  --z-index-popup: 10;
 }

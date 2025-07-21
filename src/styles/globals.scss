@@ -2,6 +2,8 @@ html {
   &.is-lock {
     overflow: hidden;
   }
+
+  scrollbar-gutter: auto;
 }
 
 body {
@@ -12,17 +14,20 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   min-width: $container-min-width;
+  scrollbar-gutter: auto;
 }
 
 h1,
 .h1 {
-  font-size: 24px;
+  @include fluid-text(48, 24);
+
+  line-height: 1.1;
   font-weight: 700;
 }
 
 h2,
 .h2 {
-  @include fluid-text(48, 24);
+  @include fluid-text(32, 20);
 
   font-weight: 700;
 }
@@ -79,4 +84,8 @@ a {
 
 :focus-visible {
   @include focus-visible;
+}
+
+iframe {
+  max-width: 100%;
 }

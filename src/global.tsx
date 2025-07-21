@@ -8,12 +8,13 @@ import appleTouchIcon from '@/assets/favicons/apple-touch-icon.png'
 import favicon32 from '@/assets/favicons/favicon-32x32.png'
 import favicon16 from '@/assets/favicons/favicon-16x16.png'
 import manifest from '@/assets/favicons/site.webmanifest'
+import Root from './layouts/Root'
 
 export default (props: GlobalProps) => {
   const { children, title, url } = props
 
   return (
-    <>
+    <Root>
       <Head htmlAttributes={{ lang: 'en' }}>
         <title>Friendly Frontend Starter | {title}</title>
         <script src="/src/main.ts" type="module" />
@@ -25,6 +26,6 @@ export default (props: GlobalProps) => {
       <Header url={url} />
       <Content>{children}</Content>
       <Footer />
-    </>
+    </Root>
   )
 }
