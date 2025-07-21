@@ -3,13 +3,18 @@
   align-items: center;
   column-gap: 0.3em;
   padding: 8px 12px;
-  color: var(--color-black);
-  background-color: var(--color-white);
-  border: var(--border);
-  border-radius: var(--border-radius-m);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--border-radius-md);
+
+  &:active {
+    scale: .98;
+  }
 
   @include hover {
     color: var(--color-white);
-    background-color: var(--color-accent);
+    background-color: var(--color-primary-dark);
   }
 }
