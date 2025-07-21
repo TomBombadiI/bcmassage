@@ -1,7 +1,7 @@
 import type { Metadata } from 'minista'
 import Hero from '@/sections/Hero'
 import Section from '@/layouts/Section'
-import Embed from '@/components/Embed'
+import Benefits from '@/components/Benefits'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -13,14 +13,15 @@ export default () => {
       <Hero />
       <Section title='О курсе' titleId='about-section'>
 
+
         <iframe
           width="720"
           height="405"
-          src="https://rutube.ru/play/embed/9d3e3f972bf8911d697e293ccc8c5611"
+          src="https://rutube.ru/play/embed/bac9fccbb8cd9d1e2d77bd57596e1ac6"
+          frameBorder="0"
           allow="clipboard-write; autoplay"
           allowFullScreen
         ></iframe>
-
 
         <p>Курс «Больше чем массаж» является интегративным, в нем сочетаются классический подход с постановкой рук и прямой передачей навыков и инновации онлайн обучения при изучении теоретического материала на учебной платформе.</p>
         <p><span>На курсе «Больше, Чем Массаж» вы научитесь мягко, безопасно и эффективно помогать Человеку вернуться к Здоровью.</span></p>
@@ -49,6 +50,9 @@ export default () => {
         <p><span>По итогам всего курса выдаётся диплом государственного образца с внесением в ФИС ФРДО.</span></p>
         <p><span>Я учусь и буду продолжать учиться каждый день и с каждым посетителем. Приглашаю и вас к активному созидательному участию в этом творческом и жизнеутверждающем действе – возвращении Человеку Здоровья.</span></p>
         <p><span>Став студентом школы «Больше, Чем Массаж», вы откроете для себя новые возможности личностного роста и благополучия!</span></p>
+      </Section>
+      <Section title="Преимущества подхода" titleId='benefits-section'>
+        <Benefits />
       </Section>
     </>
   )

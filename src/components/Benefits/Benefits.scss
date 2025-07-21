@@ -1,0 +1,33 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+
+  &__list {
+    --gap: var(--spacing-md);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--spacing-sm);
+    flex: 0 0 190px;
+
+    &-text {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    &-image {
+      width: 148px;
+      height: 167px;
+    }
+  }
+}
