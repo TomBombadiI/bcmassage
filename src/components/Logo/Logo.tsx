@@ -16,10 +16,10 @@ export default (props: TLogoProps) => {
     >
       <img
         className="logo__image"
-        src="/images/logo.svg"
+        src="/images/logo.png"
         alt=""
-        width={200}
-        height={68}
+        width={144}
+        height={96}
         loading={loading}
       />
     </a>

@@ -5,7 +5,7 @@ import type { TBurgerButtonProps } from './types'
 export default (props: TBurgerButtonProps) => {
   const { className, extraAttrs } = props
 
-  const title = 'Open menu'
+  const title = 'Открыть навигационное меню'
 
   return (
     <button

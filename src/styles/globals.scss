@@ -9,15 +9,14 @@ body {
   flex-direction: column;
   font-family: var(--font-family-base), sans-serif;
   font-size: 16px;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: var(--color-text);
+  background-color: var(--color-bg);
   min-width: $container-min-width;
 }
 
 h1,
 .h1 {
-  @include fluid-text(58, 28);
-
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -70,7 +69,7 @@ a {
   color: inherit;
 
   @include hover {
-    color: var(--color-accent);
+    color: var(--color-primary);
   }
 
   &[class] {
