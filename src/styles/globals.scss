@@ -5,13 +5,13 @@ html {
 }
 
 body {
-  @include fluid-text(18, 14);
-
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base), sans-serif;
+  font-size: 16px;
   color: var(--color-white);
   background-color: var(--color-black);
+  min-width: $container-min-width;
 }
 
 h1,
