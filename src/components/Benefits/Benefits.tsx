@@ -15,7 +15,7 @@ export default (props: TBenefitsProps) => {
       <ul className="benefits__list">
         {benefits.map(({ label, imageSrc }, index) => (
           <li className="benefits__item" key={index}>
-            <Image className='benefits__item-image' src={imageSrc} />
+            <img className='benefits__item-image' src={imageSrc} alt='' />
             <h3 className="benefits__item-text h6">{label}</h3>
           </li>
         ))}

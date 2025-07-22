@@ -1,7 +1,6 @@
 import { Image } from 'minista';
 import './ArticleCard.scss';
 import { TArticleCardProps } from './types';
-import thumbnail from '@/assets/images/articles/thumbnail.png';
 import Button from '../Button';
 
 export default (props: TArticleCardProps) => {
@@ -9,7 +8,7 @@ export default (props: TArticleCardProps) => {
     title,
     description,
     link = '#',
-    imageSrc = thumbnail
+    imageSrc = 'images/articles/thumbnail.png'
   } = props;
 
   return (
@@ -24,7 +23,7 @@ export default (props: TArticleCardProps) => {
         <Button className='article-card__more' href={link}>Подробнее</Button>
       </div>
       <a className="article-card__image" href={link}>
-        <Image src={imageSrc} width={200} height={200} />
+        <img src={imageSrc} width={200} height={200} alt='' />
       </a>
     </div>
   )

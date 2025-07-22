@@ -35,10 +35,10 @@ export default () => {
         <div className="hero__slider swiper" data-js-slider data-js-swiper-params={JSON.stringify(swiperParams)}>
           <ul className="hero__slider-list swiper-wrapper" data-js-slider-swiper>
             <li className="hero__slider-item swiper-slide">
-              <Image src={slide1} data-fancybox="hero-slider" />
+              <img src="images/slides/1.jpg" data-fancybox="hero-slider" alt='' />
             </li>
             <li className="hero__slider-item swiper-slide">
-              <Image src={slide2} data-fancybox="hero-slider" />
+              <img src="images/slides/2.jpg" data-fancybox="hero-slider" alt="" />
             </li>
           </ul>
           <div className="hero__slider-pagination swiper-pagination" data-js-slider-pagination></div>

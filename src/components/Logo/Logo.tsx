@@ -16,7 +16,7 @@ export default (props: TLogoProps) => {
     >
       <img
         className="logo__image"
-        src="/images/logo.png"
+        src="images/logo.png"
         alt=""
         width={144}
         height={96}
