@@ -22,6 +22,7 @@ export default (props: GlobalProps) => {
         <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
         <link rel="manifest" href={manifest} />
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
       </Head>
       <Header url={url} />
       <Content>{children}</Content>

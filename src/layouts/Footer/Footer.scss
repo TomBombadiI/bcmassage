@@ -1,4 +1,65 @@
 .footer {
   padding-block: 20px;
-  background-color: var(--color-gray);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 18px;
+
+  a {
+    @include hover {
+      color: var(--color-accent-peach);
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem var(--spacing-md);
+
+    @include mobile-above {
+      & > *:nth-child(2) {
+        justify-self: center;
+      }
+
+      & > *:last-child {
+        justify-self: end;
+      }
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+
+      & > *:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @include mobile-s {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__group,
+  &__group-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-md);
+  }
+
+  &__group {
+    &-title {
+      color: var(--color-accent-peach);
+      font-weight: 700;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-sm);
+  }
+
+  &__soc1als {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
 }

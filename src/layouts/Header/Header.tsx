@@ -3,52 +3,10 @@ import './Header.scss'
 import type { THeaderProps } from './types'
 import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
+import menuItems from '@/data/menuItems'
 
 export default (props: THeaderProps) => {
   const { url } = props
-
-  const menuItems = [
-    {
-      label: 'О курсе',
-      href: '/'
-    },
-    {
-      label: 'О ведущем',
-      href: '/'
-    },
-    {
-      label: 'Новости',
-      href: '/'
-    },
-    {
-      label: 'Программа',
-      href: '/'
-    },
-    {
-      label: 'Расписание',
-      href: '/'
-    },
-    {
-      label: 'Отзывы',
-      href: '/'
-    },
-    {
-      label: 'Материалы',
-      href: '/'
-    },
-    {
-      label: 'Контакты',
-      href: '/'
-    },
-    {
-      label: 'Реестр специалистов',
-      href: '/'
-    },
-    {
-      label: 'Документы',
-      href: '/'
-    },
-  ]
 
   return (
     <header className="header" data-js-overlay-menu="">
