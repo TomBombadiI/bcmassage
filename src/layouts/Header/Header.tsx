@@ -15,7 +15,7 @@ export default (props: THeaderProps) => {
           <Logo className='header__logo' loading='eager' />
           <div className="header__contacts hidden-mobile">
             <a className='header__phone' href="tel:+79124088528">+7 (912) 408-85-28</a>
-            <Button className='header__button' type='button'>
+            <Button className='header__button' type='button' data-micromodal-trigger="feedback-popup">
               Заявка на участие
             </Button>
           </div>
@@ -30,7 +30,7 @@ export default (props: THeaderProps) => {
             <nav className="header__overlay-menu-nav">
               <div className="header__overlay-menu-contacts visible-mobile">
                 <a className='header__phone' href="tel:+79124088528">+7 (912) 408-85-28</a>
-                <Button className='header__button' type='button'>
+                <Button className='header__button' type='button' data-micromodal-trigger="feedback-popup">
                   Заявка на участие
                 </Button>
               </div>

@@ -20,7 +20,7 @@ export default (props: TBenefitsProps) => {
           </li>
         ))}
       </ul>
-      <Button>
+      <Button data-micromodal-trigger="feedback-popup">
         Заявка на участие
       </Button>
     </div>

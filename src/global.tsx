@@ -9,6 +9,8 @@ import favicon32 from '@/assets/favicons/favicon-32x32.png'
 import favicon16 from '@/assets/favicons/favicon-16x16.png'
 import manifest from '@/assets/favicons/site.webmanifest'
 import Root from './layouts/Root'
+import Popup from './components/Popup'
+import FeedbackForm from './sections/FeedbackForm'
 
 export default (props: GlobalProps) => {
   const { children, title, url } = props
@@ -27,6 +29,9 @@ export default (props: GlobalProps) => {
       <Header url={url} />
       <Content>{children}</Content>
       <Footer />
+      <Popup popupName='feedback-popup' title="Отправьте заявку">
+        <FeedbackForm />
+      </Popup>
     </Root>
   )
 }
