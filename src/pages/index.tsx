@@ -2,26 +2,52 @@ import type { Metadata } from 'minista'
 import Hero from '@/sections/Hero'
 import Section from '@/layouts/Section'
 import Benefits from '@/components/Benefits'
+import Articles from '@/sections/Articles'
+import { TArticleCard } from '@/components/ArticleCard/types'
+import articleImage1 from '@/assets/images/articles/1.jpg';
+import articleImage2 from '@/assets/images/articles/2.jpg';
+import SliderNavigation from '@/components/SliderNavigation'
 
 export const metadata: Metadata = {
   title: 'Home',
 }
 
 export default () => {
+  const lastArticles: TArticleCard[] = [
+    {
+      title: 'О курсе подробнее',
+      description: 'Еще несколько видео, в которых рассказываю о курсе. И подробное описание программы модулей курса Эфир ответов на вопросы о курсе и всяком прочем…',
+    },
+    {
+      title: 'Видеообзоры цикла «Физиологический ликбез»',
+      description: 'Физиологический ликбез. Вопросы о протрузиях и грыжах межпозвоночных дисков. Цикл обзоров «Физиологический ликбез» Беседы о альтернативных взглядах на',
+    },
+    {
+      title: 'Закон парных случаев',
+      description: 'Сегодня приём богат на сюрпризы. То, что коллеги называют законом парных случаев… Собственно, сами по себе такие эпизоды обычны для моей практики, но то, что они шли один за другим, вдохновило о них написать: Пришла женщина с каким-то обычным набором жалоб — шея, между лопатками, и что-то ещё. В диагностике вышел на пару не работающих',
+      imageSrc: articleImage1,
+    },
+    {
+      title: 'Об историях',
+      description: 'Людям свойственно искать историю — как причину своих симптомов. К примеру, когда ко мне приходит мужчина, подтянутый, среднего возраста, то история примерно такая: «я не разогретый начал тренироваться и тут вдруг хрум — и заболело», «упал на роликах/горных лыжах, и с тех пор пошло», и тому подобное…  Когда приходит не очень подтянутый и постарше, то…',
+      imageSrc: articleImage2,
+    },
+  ];
+
   return (
     <>
       <Hero />
       <Section title='О курсе' titleId='about-section'>
 
 
-        <iframe
+        {/* <iframe
           width="720"
           height="405"
           src="https://rutube.ru/play/embed/bac9fccbb8cd9d1e2d77bd57596e1ac6"
           frameBorder="0"
           allow="clipboard-write; autoplay"
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
 
         <p>Курс «Больше чем массаж» является интегративным, в нем сочетаются классический подход с постановкой рук и прямой передачей навыков и инновации онлайн обучения при изучении теоретического материала на учебной платформе.</p>
         <p><span>На курсе «Больше, Чем Массаж» вы научитесь мягко, безопасно и эффективно помогать Человеку вернуться к Здоровью.</span></p>
@@ -53,6 +79,15 @@ export default () => {
       </Section>
       <Section title="Преимущества подхода" titleId='benefits-section'>
         <Benefits />
+      </Section>
+      <Section
+        title="Последние статьи"
+        titleId='last-articles-section'
+        actions={(
+          <SliderNavigation sliderId='last-articles-slider' />
+        )}
+      >
+        <Articles id='last-articles-slider' items={lastArticles} />
       </Section>
     </>
   )

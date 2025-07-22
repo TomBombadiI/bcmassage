@@ -89,3 +89,8 @@ a {
 iframe {
   max-width: 100%;
 }
+
+:has(.swiper) {
+  min-width: 0;
+  width: 100%;
+}

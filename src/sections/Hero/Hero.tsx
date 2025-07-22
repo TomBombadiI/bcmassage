@@ -13,8 +13,9 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 export default () => {
   const swiperParams: SwiperOptions = {
     loop: true,
+    speed: 500,
     autoplay: {
-      delay: 1000,
+      delay: 3000,
     },
     navigation: {
       nextEl: '.swiper-button-next',

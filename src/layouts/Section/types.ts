@@ -4,6 +4,7 @@ export type TSectionProps = PropsWithChildren<
   {
     title: ReactNode
     titleId: string
-    description?: ReactNode
+    description?: ReactNode,
+    actions?: ReactNode
   } & HTMLAttributes<HTMLElement>
 >

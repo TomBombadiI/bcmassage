@@ -1,0 +1,48 @@
+.article-card {
+  display: flex;
+  height: 100%;
+  border: var(--border);
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-md);
+    padding: var(--spacing-md);
+
+    @include mobile {
+      flex: 1;
+    }
+  }
+
+  &__description {
+    flex: 1;
+  }
+
+  &__more {
+    align-self: start;
+  }
+
+  &__image {
+    --imageSize: 200px;
+
+    flex: 0 0 var(--imageSize);
+    height: var(--imageSize);
+
+    @include mobile {
+      display: inline-block;
+      width: 100%;
+      height: 350px;
+      order: -1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

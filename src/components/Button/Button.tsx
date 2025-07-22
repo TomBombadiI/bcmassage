@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import type { TButtonProps } from './types'
 
 export default (props: TButtonProps) => {
-  const { className, type = 'button', href, children } = props
+  const { className, type = 'button', href, children, ...rest } = props
 
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
@@ -12,7 +12,7 @@ export default (props: TButtonProps) => {
   const attributesByTag = isLink ? linkAttributes : buttonAttributes
 
   return (
-    <Component className={clsx('button', className)} {...attributesByTag}>
+    <Component className={clsx('button', className)} {...attributesByTag} {...rest}>
       {children}
     </Component>
   )

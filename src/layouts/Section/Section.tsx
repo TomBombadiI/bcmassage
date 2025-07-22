@@ -3,7 +3,7 @@ import type { TSectionProps } from './types'
 import clsx from 'clsx'
 
 export default (props: TSectionProps) => {
-  const { className, title, titleId, description, children } = props
+  const { className, title, titleId, actions, children } = props
 
   return (
     <section
@@ -14,11 +14,9 @@ export default (props: TSectionProps) => {
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>
-        {description && (
-          <div className="section__description">
-            <p>{description}</p>
-          </div>
-        )}
+        <div className="section__actions">
+          {actions}
+        </div>
       </header>
       <div className="section__body">{children}</div>
     </section>

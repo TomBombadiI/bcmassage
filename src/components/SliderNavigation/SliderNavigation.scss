@@ -1,0 +1,14 @@
+.slider-navigation {
+  display: flex;
+  column-gap: var(--spacing-sm);
+
+  &__button {
+    text-align: center;
+
+    .icon {
+      svg {
+        @include flex-center(true);
+      }
+    }
+  }
+}
